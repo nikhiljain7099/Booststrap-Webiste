@@ -1,0 +1,191 @@
+body{
+    font-family: sans-serif;
+}
+p,li,#banner a{
+    text-decoration: none;
+    font-weight: 100;
+}
+/* NAV BAR */
+.navbar{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    padding: 0 !important;
+}
+.nav-link{
+    color: white !important;
+}
+.navbar-brand img{
+    height: 40px;
+}
+.fa-bars{
+    color: white;
+    border: white;
+}
+.navbar-toggler,.navbar-toggler:focus {
+    border: none;
+}
+
+/* BANNER SECTION */
+#banner{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    color: white;
+}
+#banner a img{
+    width: 45px;
+    margin: 20px;
+}
+#banner a{
+    color: white;
+}
+#banner .main-img{
+    width: 85%;
+}
+#banner .wave{
+    width: 100vw;
+}
+
+/* SERVICES SECTION */
+#services .d-flex{
+    text-align: center;
+}
+#services .d-flex .column img{
+    width: 30%;
+}
+#services .d-flex a{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    color: white;
+    border-radius: 50px;
+}
+a:hover{
+    text-decoration: none;
+    size: 10%;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.title2::before{
+content: '';
+background-color: #7b1798;
+ height: 5px;
+width: 170px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+transform: translateY(63px);
+}
+.title2::after{
+    content: '';
+    display: block;
+    height: 10px;
+    width: 50px;
+    background-color: #7b1798;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+}
+
+/* TESTIMONIALS */
+#testimonials .testimonials{
+    border-left: 4px solid #7b1798;
+    width: 40%;
+    
+}
+#testimonials img{
+    width: 15%;
+    clip-path: circle(50% at 50% 50%);
+}
+#testimonials .testimonials img+p{
+    font-size: 13px;
+}
+
+/* CONTACT US */
+#contact-us a{
+    width: 50px;
+}
+#contact-us a:hover{
+    transition: 1000ms;
+    position: relative;
+    bottom: 10px;
+}
+#contact-us img{
+    width: 100%;
+    transition: 0.5s;
+}
+#contact-us a:hover img{
+    transform: translateY(-10px);
+}
+
+/* FOOTER */
+#footer{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    color: white;
+}
+#footer .column{
+    width: 30%;
+}
+#footer .logo{
+    width: 30%;
+}
+#footer .c2 p{
+    display: inline;
+    margin-left: 5px;
+}
+#footer i{
+    margin-top: 15px;
+    margin-right: 8px;
+    font-size: 19px;
+    height: 33px;
+    width: 33px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+}
+
+#footer hr{
+    color: white;
+    border: 1px solid white;
+}
+#footer input[type="email"]{
+    width: 80%;
+    border: none;
+    padding:5px ;
+}
+#footer input[type="submit"]{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 1px;
+}
+
+
+
+/* RESPONSIVENESS */
+@media screen and (max-width:768px){  
+    #footer .column{
+        width: 100%;
+    }
+    #testimonials .testimonials{
+        margin-top: 30px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    h1{
+        font-size: 25px;
+    }
+    .title2::before{
+        transform: translateY(45px);
+    }
+    h5{
+        font-size: 16px;
+    }
+    p,li{
+        font-size: 10px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
